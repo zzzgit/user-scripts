@@ -1,6 +1,5 @@
 // ==UserScript==
-// @name         global-page-scroll-shortcut
-// @namespace    http://jonkee.la/
+// @name         global-page-scrollPage-shortcut
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
 // @version      0.1
 // @description  shortcut for key w j k
@@ -15,13 +14,13 @@
 (function () {
 	'use strict';
 	//頁面滾動
-	function scroll(direction) {
+	function scrollPage(direction) {
 		var h = window.innerHeight;
 		if (direction < 0) {
 			h = 0 - h;
 		}
 		var top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-		window.scroll(0, h + top);
+		window.scrollPage(0, top + h);
 	}
 	//添加全局事件
 	document.addEventListener("keyup", function (e) {
@@ -34,11 +33,16 @@
 				window.close();
 				break;
 			case "j":
-				scroll(1);
+				scrollPage(1);
 				break;
 			case "k":
-				scroll(-1);
+				scrollPage(-1);
+				break;
+			case "Escape":
+				window.scrollTo(0, 0)
 				break;
 		}
 	});
 })();
+
+
