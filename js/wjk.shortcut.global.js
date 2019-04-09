@@ -32,7 +32,7 @@
 		let key = e.key
 		switch (key) {
 			case "w":// 只能關閉由他自己打開的window
-				window.close();
+				// window.close();
 				break;
 			case "j":
 				scrollPage(1);
