@@ -4,14 +4,12 @@
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
 // @version      0.1
 // @description  shortcut for key w j k
+// @license      MIT; https://opensource.org/licenses/MIT
 // @copyright    2014, me
 // @author       zzzope
 // @match        http://*/*
 // @match        https://*/*
 // @grant        none
-// @homepageURL  http://www.google.com
-// @supportURL   http://www.google.com
-// @contributionURL http://www.google.com
 // ==/UserScript==
 
 (function () {
