@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         global-page-scroll-shortcut
 // @namespace    http://jonkee.la/
+// @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
 // @version      0.1
 // @description  shortcut for key w j k
-// @author       jonkee
+// @author       zzzope
 // @match        http://*/*
 // @match        https://*/*
 // @grant        none
