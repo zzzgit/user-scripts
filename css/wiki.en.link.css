@@ -1,0 +1,9 @@
+@-moz-document regexp('.+\.wikipedia\.org.*'), regexp('.+\.wiktionary\.org.*') {
+    .interlanguage-link.interwiki-en {
+        font-size: 1em !important;
+        text-shadow: 2px 2px 4px #1C6EA4;
+    }
+    .interlanguage-link.interwiki-en>a {
+        color: red !important;
+    }
+}

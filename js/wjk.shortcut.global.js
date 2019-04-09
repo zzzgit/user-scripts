@@ -8,6 +8,8 @@
 // @author       zzzope
 // @match        http://*/*
 // @match        https://*/*
+// @exclude      https://*wikipedia.org/*
+// @exclude      https://*wiktionary.org/*
 // @grant        none
 // ==/UserScript==
 
