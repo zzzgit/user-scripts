@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         global-page-scrollPage-shortcut
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
-// @version      0.1
+// @version      0.5
 // @description  shortcut for key w j k
 // @license      MIT; https://opensource.org/licenses/MIT
 // @copyright    2014, me
@@ -10,6 +10,7 @@
 // @match        https://*/*
 // @exclude      https://*wikipedia.org/*
 // @exclude      https://*wiktionary.org/*
+// @exclude      https://*google.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -22,7 +23,7 @@
 			h = 0 - h;
 		}
 		var top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-		window.scrollPage(0, top + h);
+		window.scroll(0, top + h);
 	}
 	//添加全局事件
 	document.addEventListener("keyup", function (e) {
