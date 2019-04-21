@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         wikipedia toolkit
-// @version      0.1
+// @version      0.9
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
 // @description  nothing
 // @author       zzzope
@@ -53,6 +53,11 @@
 		}
 	})
 	// redirect
+	let chLink = document.querySelector(".interlanguage-link.interwiki-zh a")
+
+	if (chLink && chLink.href) {
+		chLink.href = chLink.href.replace(/org\/.*\//, "org/zh-tw/")
+	}
 	if (window.location.hostname === "zh.wikipedia.org") {
 		if (!url.includes("zh-tw")) {
 			window.location = url.replace(/org\/.*\//, "org/zh-tw/")
