@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         search engine toolkit
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
-// @version      0.3
+// @version      0.4
 // @description  Esc and / shortcut support for baidu and wiki
 // @license      MIT; https://opensource.org/licenses/MIT
 // @copyright    2014, me
 // @author       zzzope
-// @match        http://*/*
 // @match        https://*.baidu.com/*
 // @match        https://*.wikipedia.org/*
 // @match        https://*.wiktionary.org/*
