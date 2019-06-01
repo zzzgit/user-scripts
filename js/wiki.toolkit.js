@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         wikipedia toolkit
-// @version      1.0.5
+// @version      1.0.6
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
 // @description  nothing
 // @author       zzzope
@@ -57,7 +57,7 @@
 	if (window.location.hostname.includes(".wikipedia.org")) {
 		let chLink = document.querySelector(".interlanguage-link.interwiki-zh a")
 		if (chLink && chLink.href) {
-			chLink.href = chLink.href.replace(/org\/.*\//, "org/zh-tw/")
+			// chLink.href = chLink.href.replace(/org\/.*\//, "org/zh-tw/")
 		}
 	}
 	if (window.location.hostname === "zh.wikipedia.org") {
