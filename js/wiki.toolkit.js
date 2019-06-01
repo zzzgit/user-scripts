@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         wikipedia toolkit
-// @version      1.0.3
+// @version      1.0.5
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
 // @description  nothing
 // @author       zzzope
@@ -63,7 +63,7 @@
 	if (window.location.hostname === "zh.wikipedia.org") {
 		if (!url.includes("w/index.php")) {
 			if (!url.includes("zh-tw")) {
-				window.location = url.replace(/org\/.*\//, "org/zh-tw/")
+				// window.location = url.replace(/org\/.*\//, "org/zh-tw/")
 			}
 		}
 	}
