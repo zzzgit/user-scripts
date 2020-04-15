@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         global-page-scrollPage-shortcut
 // @updateURL    https://openuserjs.org/meta/zzzope/My_Script.meta.js
-// @version      0.5
+// @version      0.8
 // @description  shortcut for key w j k
 // @license      MIT; https://opensource.org/licenses/MIT
 // @copyright    2014, me
@@ -26,6 +26,12 @@
 		window.scroll(0, top + h);
 	}
 	//添加全局事件
+	const editable_arr = document.querySelectorAll("div[contenteditable]")
+	editable_arr.forEach(item=>{
+		item.addEventListener("keyup", function (e) {
+			e.stopPropagation()
+		})
+	})
 	document.addEventListener("keyup", function (e) {
 		if (e.target.tagName == "INPUT" || e.target.tagName == "TEXTAREA") {
 			return null;
